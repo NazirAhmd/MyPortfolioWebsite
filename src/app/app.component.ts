@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'portfolio';
+  title = 'Nazir';
+
+  highlightCurrentTopNavLink(link:any):void{
+    link.classList.add('activeLink');
+    console.log(link);
+  }
 }

@@ -1,0 +1,12 @@
+<section id="experience">
+  <div class="container">
+    <h2 class="text-center">{{title}}</h2>
+    <div class="experienceDetail" *ngFor="let exp of experiences">
+      <div class="company font-weight-bold">{{exp.companyName}}</div>
+      <div class="designation highlight">{{exp.designationAndYearsActive}}</div>
+      <ul>
+        <li *ngFor="let det of exp.contributions">{{det}}</li>
+      </ul>
+    </div>
+  </div>
+</section>

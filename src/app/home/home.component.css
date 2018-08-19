@@ -1,0 +1,45 @@
+#home{
+    background: url('../../assets/sackcloth-sackcloth-textured-laptop-ipad-163143.jpeg');
+    min-height: 500px;
+    background-size:     cover;                
+    background-repeat:   no-repeat;
+    background-position: center center;
+    text-align: center;
+    color:#DFF3FF;
+    padding-top: 30px;
+}
+#my-profile-pic{
+    margin-top:6%;
+    border: 4px solid #DFF3FF;
+    width: 180px;
+}
+.social-link {
+    margin-top: 32px;
+    padding: 0 10px;
+    display: inline-block;
+    position: relative;
+    list-style-type: none;
+}
+.social-link li {
+    display: inline;
+    padding: 5px;
+}
+.social-link::before,.social-link::after{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    background: #DFF3FF!important;
+    height: 2px;
+    content: "";
+    margin: auto;
+}
+.social-link::before {
+    right: 100%;
+}
+.social-link::after {
+    left: 100%;
+}
+.fa{
+    color: #DFF3FF!important;
+}
