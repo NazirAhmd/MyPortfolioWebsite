@@ -26,16 +26,7 @@ export class NavigationDir implements OnChanges {
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title: string = 'Nazir';
-
-  selectedAnchorText: string = "Home";
-
   constructor() {
   }
-
-  onNavLinkClicked(clickedElement) {
-    this.selectedAnchorText = clickedElement.innerText;
-  }
-
 }
 
