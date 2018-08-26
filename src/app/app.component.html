@@ -10,32 +10,32 @@
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link activeLink" href="#home" #home (click)="highlightCurrentTopNavLink(home)">Home</a>
+          <a class="nav-link" href="#home" (click)="onNavLinkClicked($event.target)" [clickedLinkText]=selectedAnchorText>Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#about" #about (click)="highlightCurrentTopNavLink(about)">About</a>
-          </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skills" #skills (click)="highlightCurrentTopNavLink(skills)">Skills</a>
+          <a class="nav-link" href="#about" (click)="onNavLinkClicked($event.target)" [clickedLinkText]=selectedAnchorText>About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#experience" #experience (click)="highlightCurrentTopNavLink(experience)">Experience</a>
+          <a class="nav-link" href="#skills" (click)="onNavLinkClicked($event.target)" [clickedLinkText]=selectedAnchorText>Skills</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" #portfolio (click)="highlightCurrentTopNavLink(portfolio)">Portfolio</a>
+          <a class="nav-link" href="#experience" (click)="onNavLinkClicked($event.target)" [clickedLinkText]=selectedAnchorText>Experience</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" #contact (click)="highlightCurrentTopNavLink(contact)">Contact</a>
+          <a class="nav-link" href="#" (click)="onNavLinkClicked($event.target)" [clickedLinkText]=selectedAnchorText>Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" (click)="onNavLinkClicked($event.target)" [clickedLinkText]=selectedAnchorText>Contact</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 
-<app-home></app-home>
+<app-home #appHome></app-home>
 
-<app-about></app-about>
+<app-about #appAbout></app-about>
 
-<app-skills></app-skills>
+<app-skills #appSkills></app-skills>
 
-<app-experience></app-experience>
+<app-experience #appExperience></app-experience>
